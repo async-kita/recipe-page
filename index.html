@@ -13,6 +13,10 @@
     href="./assets/images/favicon-32x32.png"
   >
   <title>Frontend Mentor | Recipe page</title>
+  <link
+    rel="stylesheet"
+    href="./styles/style.css"
+  >
 </head>
 <body>
 
@@ -32,7 +36,7 @@
       <p class="recipe-header__description">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
     </header>
     <section class="recipe-card__preparation recipe-preparation">
-      <h2 class="recipe-preparation__title">Preparation time</h2>
+      <h2 class="recipe-preparation__title accent">Preparation time</h2>
       <ul class="recipe-preparation__list">
         <li class="recipe-preparation__item">
           <strong>Total:</strong> Approximately 10 minutes
@@ -70,22 +74,24 @@
       <h2 class="recipe-nutrition__title">Nutrition</h2>
       <p class="recipe-nutrition__description">The table below shows nutritional values per serving without the additional fillings.</p>
       <table class="recipe-nutrition__table">
-        <tr class="recipe-nutrition__table-row">
-          <td class="recipe-nutrition__table-cell">Calories</td>
-          <td class="recipe-nutrition__table-cell">277kcal</td>
-        </tr>
-        <tr class="recipe-nutrition__table-row">
-          <td class="recipe-nutrition__table-cell">Carbs</td>
-          <td class="recipe-nutrition__table-cell">0g</td>
-        </tr>
-        <tr class="recipe-nutrition__table-row">
-          <td class="recipe-nutrition__table-cell">Protein</td>
-          <td class="recipe-nutrition__table-cell">20g</td>
-        </tr>
-        <tr class="recipe-nutrition__table-row">
-          <td class="recipe-nutrition__table-cell">Fat</td>
-          <td class="recipe-nutrition__table-cell">22g</td>
-        </tr>
+        <tbody>
+          <tr class="recipe-nutrition__table-row">
+            <td class="recipe-nutrition__table-cell">Calories</td>
+            <td class="recipe-nutrition__table-cell"><strong>277kcal</strong></td>
+          </tr>
+          <tr class="recipe-nutrition__table-row">
+            <td class="recipe-nutrition__table-cell">Carbs</td>
+            <td class="recipe-nutrition__table-cell"><strong>0g</strong></td>
+          </tr>
+          <tr class="recipe-nutrition__table-row">
+            <td class="recipe-nutrition__table-cell">Protein</td>
+            <td class="recipe-nutrition__table-cell"><strong>20g</strong></td>
+          </tr>
+          <tr class="recipe-nutrition__table-row">
+            <td class="recipe-nutrition__table-cell">Fat</td>
+            <td class="recipe-nutrition__table-cell"><strong>22g</strong></td>
+          </tr>
+        </tbody>
       </table>
     </section>
   </article>
