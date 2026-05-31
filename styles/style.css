@@ -13,7 +13,8 @@
 
 @font-face {
   font-family: "Outfit";
-  src: url("../assets/fonts/outfit/static/Outfit-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/outfit/static/Outfit-Regular.ttf")
+    format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -21,7 +22,8 @@
 
 @font-face {
   font-family: "Outfit";
-  src: url("../assets/fonts/outfit/static/Outfit-SemiBold.ttf") format("truetype");
+  src: url("../assets/fonts/outfit/static/Outfit-SemiBold.ttf")
+    format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -37,7 +39,8 @@
 
 @font-face {
   font-family: "YoungSerif";
-  src: url("../assets/fonts/young-serif/YoungSerif-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/young-serif/YoungSerif-Regular.ttf")
+    format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -68,7 +71,8 @@ h2 {
   color: var(--brown-800);
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: var(--font-family-accent), serif;
   font-weight: 600;
   margin-bottom: 20px;
@@ -80,7 +84,8 @@ h2.accent {
   margin-bottom: 15px;
 }
 
-ul, ol {
+ul,
+ol {
   list-style-type: none;
 }
 
@@ -100,6 +105,10 @@ ul, ol {
   padding: 60px;
   background-color: var(--color-white);
   border-radius: 30px;
+}
+
+.recipe-card__wrapper {
+  display: contents;
 }
 
 .recipe-card__image-wrapper {
@@ -196,14 +205,31 @@ ul, ol {
   color: var(--brown-800);
 }
 
-.recipe-nutrition__table-row:not(:last-child) {
-
-}
-
 .recipe-nutrition__table-cell {
   padding-block: 10px;
 }
 
 .recipe-nutrition__table-row:not(:last-child) .recipe-nutrition__table-cell {
   border-bottom: 1px solid var(--stone-150);
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    padding: 0;
+  }
+
+  .recipe-card {
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .recipe-card__wrapper {
+    display: grid;
+    row-gap: 30px;
+    padding-inline: 20px;
+  }
+
+  .recipe-card__image-wrapper {
+    border-radius: 0;
+  }
 }
